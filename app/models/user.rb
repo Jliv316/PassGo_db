@@ -9,6 +9,7 @@ class User < ApplicationRecord
   def check_for_points(user, user_location, company)
     distance = Distance.new(company, user_location).distance
       if distance < 7
+        UserCompany.create(user_id: user.id, company_id: company.id)
         user_company = user.points(company)
         user_company.points += 1
         user_company.save
