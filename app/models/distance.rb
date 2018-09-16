@@ -11,7 +11,15 @@ class Distance
   #   result = Math.sqrt((x*x) + (y*y))
   # end
 
+  def check_company_coordinates
+    if @loc1[0] == nil || @loc2[1] == nil
+      @loc1[0] = 0.0 
+      @loc1[1] = 0.0
+    end
+  end
+
   def distance
+    check_company_coordinates
     rad_per_deg = Math::PI/180  # PI / 180
     rkm = 6371                  # Earth radius in kilometers
     rm = rkm * 1000             # Radius in meters
