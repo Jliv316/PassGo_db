@@ -8,6 +8,7 @@ class User < ApplicationRecord
 
   def check_for_points(user, user_location, company)
     distance = Distance.new(company, user_location).distance
+    binding.pry
       if distance < 7
         UserCompany.create(user_id: user.id, company_id: company.id) if user.companies.find_by(id: company.id) == nil
         user_company = user.points(company)

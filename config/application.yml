@@ -9,10 +9,3 @@
 # production:
 #   stripe_api_key: sk_live_EeHnL644i6zo4Iyq4v1KdV9H
 #   stripe_publishable_key: pk_live_9lcthxpSIHbGwmdO941O1XVU
-
-GOOGLE_API_KEY: AIzaSyBzlrwc_w_iKYAPQBFcDrKC501wy3E2L34
-GOOGLE_CLIENT_ID: 609708698001-na42t97i5tlgmatfrsp6mv0mkr475m2v.apps.googleusercontent.com
-GOOGLE_CLIENT_SECRET: xgpMj2mK70YceWGzpN8eh5vS
-
-YELP_API_KEY: cKqWxlLGczLct7u4sTltgk0iOMVTufm8z8y8hcn3qyDe1RALRcRUnuWl0xBgESnjY6UXvihjO7QZ9IzEntI4JCNXA7xbK0nblccZuiiM4l5Ra3ufB-4rzhe9kE-ZW3Yx
-YELP_CLIENT_ID: TMxgR8YnOI-0HxrTgG5xGg
