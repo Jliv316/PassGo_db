@@ -6,7 +6,26 @@ module Api::V1
       company = Company.first
       CoordService.new(company).latlng
       YelpPresenter.new(company).business
+      render json: company, status: 201
+    end
+
+    def index
+      companies = Company.all
+      render json: companies, status: 200
+    end
+
+    def show
+      company = Company.find(params[:id])
+
       render json: company, status: 200
+    end
+
+    def destroy
+      binding.pry
+      company = Company.find(params[:id])
+      company.destroy
+
+      render body: nil, status: :no_content
     end
 
     private
