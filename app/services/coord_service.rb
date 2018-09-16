@@ -13,7 +13,6 @@ class CoordService
   end
 
   def latlng
-    binding.pry
     latitude = data[:results][0][:geometry][:location][:lat]
     longitude = data[:results][0][:geometry][:location][:lng]
     @company.lat = latitude

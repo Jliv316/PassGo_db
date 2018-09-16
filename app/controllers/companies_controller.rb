@@ -9,7 +9,6 @@
       company = Company.create(company_params)
       CoordService.new(company).latlng
       YelpPresenter.new(company).business
-      binding.pry
       render json: company, status: 200
     end
 
