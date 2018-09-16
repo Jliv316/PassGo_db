@@ -15,6 +15,7 @@ gem 'rack-cors', :require => 'rack/cors'
 gem 'active_model_serializers', '~> 0.10.0'
 gem 'fast_jsonapi'
 gem 'json', '>= 2.0.0'
+gem 'faraday'
 
 
 group :development, :test do
