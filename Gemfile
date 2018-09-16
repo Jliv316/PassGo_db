@@ -16,6 +16,7 @@ gem 'active_model_serializers', '~> 0.10.0'
 gem 'fast_jsonapi'
 gem 'json', '>= 2.0.0'
 gem 'faraday'
+gem 'figaro'
 
 
 group :development, :test do
