@@ -5,6 +5,11 @@ module Api::V1
       render user, status: 201
     end
 
+    def index
+      users = User.all
+      render users, status: 200
+    end
+
     def show
       user = User.find_by(token: params[:user][:token])
       render user, status: 200
