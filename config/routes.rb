@@ -5,6 +5,7 @@ Rails.application.routes.draw do
   namespace :api do
     namespace :v1 do
       resources :companies
+      resources :users
       resources :users do
         post '/locations', to: 'users/locations#create'
       end
