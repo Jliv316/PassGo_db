@@ -1,5 +1,5 @@
 class UserSerializer < ActiveModel::Serializer
-  attributes :id, :name, :email, :companies
+  attributes :id, :name, :email, :token, :companies
 
   def companies
     user_companies = []
