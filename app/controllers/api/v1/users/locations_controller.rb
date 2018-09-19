@@ -10,9 +10,4 @@ class Api::V1::Users::LocationsController < ApplicationController
       end
       render json: user, status: 200
     end
-
-    private
-    def user_params
-      params.require(:user).permit(:name, :email, :token)
-    end
 end

@@ -2,7 +2,7 @@ class Distance
   attr_reader :loc1, :loc2
   def initialize(company, user_location)
     @loc1 = [company.lat, company.lng]
-    @loc2 = [user_location[:lat], user_location[:lng]]
+    @loc2 = [user_location[:lat].to_f, user_location[:lng].to_f]
   end
 
   # def distance
@@ -12,7 +12,7 @@ class Distance
   # end
 
   def check_company_coordinates
-    if @loc1[0] == nil || @loc2[1] == nil
+    if @loc1[0] == nil || @loc1[1] == nil
       @loc1[0] = 0.0 
       @loc1[1] = 0.0
     end

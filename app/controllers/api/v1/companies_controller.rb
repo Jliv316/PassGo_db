@@ -19,10 +19,5 @@ module Api::V1
 
       render body: nil, status: :no_content
     end
-
-    private
-    def company_params
-      params.require(:company).permit(:name, :street, :city, :state, :zip_code, :industry, :lat, :lng)
-    end
   end
 end
